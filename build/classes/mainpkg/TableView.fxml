@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="802.0" prefWidth="1441.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.TableViewController">
+   <children>
+      <TableView fx:id="tableView" layoutX="378.0" layoutY="36.0" prefHeight="731.0" prefWidth="1028.0">
+        <columns>
+          <TableColumn fx:id="modelCol" prefWidth="75.0" text="Model" />
+          <TableColumn fx:id="manuCol" prefWidth="165.0" text="Manufracture name" />
+            <TableColumn fx:id="dateCol" prefWidth="112.0" text="Date " />
+            <TableColumn fx:id="countryCol" prefWidth="112.0" text="Origin Country " />
+            <TableColumn fx:id="regCol" prefWidth="112.0" text="Reg no" />
+            <TableColumn fx:id="ccCol" prefWidth="112.0" text="CC" />
+            <TableColumn fx:id="aucPriceCol" prefWidth="112.0" text="Auction Price" />
+            <TableColumn fx:id="noOfSeatCol" prefWidth="112.0" text="No of seats" />
+            <TableColumn fx:id="sportsCol" prefWidth="112.0" text="Is a sports car?" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="ccCon1RadioButton" layoutX="78.0" layoutY="88.0" mnemonicParsing="false" text="&lt;= 1500" />
+      <Label layoutX="129.0" layoutY="36.0" text="CC" />
+      <RadioButton fx:id="ccCon2RadioButton" layoutX="78.0" layoutY="124.0" mnemonicParsing="false" text="&gt;1500 &amp;&amp; &lt;= 1800" />
+      <RadioButton fx:id="ccCon3RadioButton" layoutX="78.0" layoutY="165.0" mnemonicParsing="false" text="&gt;1800 &amp;&amp; &lt;=2200" />
+      <RadioButton fx:id="ccCon4RadioButton" layoutX="80.0" layoutY="205.0" mnemonicParsing="false" text="&gt;2200" />
+      <Label layoutX="114.0" layoutY="336.0" text="Sale price range" />
+      <TextField fx:id="minTextField" layoutX="69.0" layoutY="388.0" promptText="min" />
+      <TextField fx:id="maxTextBox" layoutX="69.0" layoutY="443.0" promptText="max" />
+      <Button layoutX="77.0" layoutY="253.0" mnemonicParsing="false" onAction="#addCCFilterButtonOnclick" prefHeight="28.0" prefWidth="238.0" text="Add filter" />
+      <Button layoutX="77.0" layoutY="548.0" mnemonicParsing="false" onAction="#addPricefilterButtonOnclick" prefHeight="28.0" prefWidth="238.0" text="Add filter" />
+      <Button layoutX="150.0" layoutY="658.0" mnemonicParsing="false" onAction="#makePDFButtonOnClick" text="make pdf" />
+   </children>
+</AnchorPane>

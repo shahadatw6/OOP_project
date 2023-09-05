@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.AddNewSalesRecordController">
+   <children>
+      <ComboBox fx:id="regNoComboBox" layoutX="507.0" layoutY="175.0" prefWidth="150.0" promptText="reg no" />
+      <ComboBox fx:id="agentIDComboBox" layoutX="507.0" layoutY="229.0" prefWidth="150.0" promptText="agent id" />
+      <Button layoutX="459.0" layoutY="305.0" mnemonicParsing="false" onAction="#getSalePriceButtonOnClick" prefHeight="28.0" prefWidth="286.0" text="Get Sale Price" />
+      <Label fx:id="salePriceLabel" layoutX="804.0" layoutY="310.0" text="Sale price : " />
+      <Button layoutX="523.0" layoutY="397.0" mnemonicParsing="false" onAction="#makeASalePriceButtonOnClick" text="Make a sale record" />
+      <Label layoutX="547.0" layoutY="76.0" text="Car sale scene" />
+      <Label layoutX="408.0" layoutY="180.0" text="reg no" />
+      <Label layoutX="408.0" layoutY="234.0" text="Agent" />
+   </children>
+</AnchorPane>

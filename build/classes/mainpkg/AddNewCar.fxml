@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="799.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AddNewCarController">
+   <children>
+      <TextField fx:id="modelTextField" layoutX="224.0" layoutY="72.0" prefHeight="28.0" prefWidth="189.0" />
+      <TextField fx:id="manuNameTextField" layoutX="224.0" layoutY="123.0" prefHeight="28.0" prefWidth="189.0" />
+      <DatePicker fx:id="dOMDatePicker" layoutX="224.0" layoutY="173.0" />
+      <TextField fx:id="countryOfMAkeTextField" layoutX="224.0" layoutY="224.0" prefHeight="28.0" prefWidth="189.0" />
+      <TextField fx:id="regNoTextField" layoutX="224.0" layoutY="278.0" prefHeight="28.0" prefWidth="189.0" />
+      <TextField fx:id="auctionTextField" layoutX="224.0" layoutY="391.0" prefHeight="28.0" prefWidth="189.0" />
+      <TextField fx:id="noOfSitTextField" layoutX="224.0" layoutY="447.0" prefHeight="28.0" prefWidth="189.0" />
+      <ComboBox fx:id="sportsComboVox" layoutX="224.0" layoutY="508.0" prefHeight="28.0" prefWidth="189.0" />
+      <Label layoutX="60.0" layoutY="77.0" text="Model" />
+      <Label layoutX="56.0" layoutY="178.0" text="Date of manufracture" />
+      <Label layoutX="60.0" layoutY="137.0" text="Manufracture Name" />
+      <Label layoutX="60.0" layoutY="229.0" text="Country Of Make" />
+      <Label layoutX="60.0" layoutY="292.0" text="Registration no" />
+      <Label layoutX="65.0" layoutY="339.0" text="CC" />
+      <Label layoutX="71.0" layoutY="396.0" text="Auction Price" />
+      <Label layoutX="77.0" layoutY="452.0" text="No of seat" />
+      <Label layoutX="81.0" layoutY="513.0" text="Is is a sports car" />
+      <Button layoutX="148.0" layoutY="612.0" mnemonicParsing="false" onAction="#addANewCarButtonOnClick" prefHeight="81.0" prefWidth="300.0" text="Add a new Car" />
+      <TextField fx:id="ccTextField" layoutX="224.0" layoutY="334.0" prefHeight="28.0" prefWidth="189.0" />
+   </children>
+</AnchorPane>
